@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/allmaxgit/go-ethereum/common"
+	"github.com/allmaxgit/go-ethereum/crypto"
+	"github.com/allmaxgit/go-ethereum/rlp"
 )
 
 // The values in those tests are from the Transaction Tests

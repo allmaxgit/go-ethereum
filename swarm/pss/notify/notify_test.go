@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/p2p/simulations"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/pss"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
+	"github.com/allmaxgit/go-ethereum/common/hexutil"
+	"github.com/allmaxgit/go-ethereum/crypto"
+	"github.com/allmaxgit/go-ethereum/log"
+	"github.com/allmaxgit/go-ethereum/node"
+	"github.com/allmaxgit/go-ethereum/p2p/discover"
+	"github.com/allmaxgit/go-ethereum/p2p/simulations"
+	"github.com/allmaxgit/go-ethereum/p2p/simulations/adapters"
+	"github.com/allmaxgit/go-ethereum/swarm/network"
+	"github.com/allmaxgit/go-ethereum/swarm/pss"
+	"github.com/allmaxgit/go-ethereum/swarm/state"
+	whisper "github.com/allmaxgit/go-ethereum/whisper/whisperv5"
 )
 
 var (

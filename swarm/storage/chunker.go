@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/spancontext"
+	"github.com/allmaxgit/go-ethereum/metrics"
+	"github.com/allmaxgit/go-ethereum/swarm/chunk"
+	"github.com/allmaxgit/go-ethereum/swarm/log"
+	"github.com/allmaxgit/go-ethereum/swarm/spancontext"
 	opentracing "github.com/opentracing/opentracing-go"
 	olog "github.com/opentracing/opentracing-go/log"
 )

@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/allmaxgit/go-ethereum/common"
+	"github.com/allmaxgit/go-ethereum/core"
+	"github.com/allmaxgit/go-ethereum/eth"
+	"github.com/allmaxgit/go-ethereum/ethdb"
+	"github.com/allmaxgit/go-ethereum/light"
+	"github.com/allmaxgit/go-ethereum/p2p"
+	"github.com/allmaxgit/go-ethereum/p2p/discover"
+	"github.com/allmaxgit/go-ethereum/params"
 )
 
 // lesCommons contains fields needed by both server and client.

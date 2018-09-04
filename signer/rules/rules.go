@@ -22,12 +22,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/rules/deps"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/allmaxgit/go-ethereum/common"
+	"github.com/allmaxgit/go-ethereum/internal/ethapi"
+	"github.com/allmaxgit/go-ethereum/log"
+	"github.com/allmaxgit/go-ethereum/signer/core"
+	"github.com/allmaxgit/go-ethereum/signer/rules/deps"
+	"github.com/allmaxgit/go-ethereum/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 

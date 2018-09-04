@@ -21,14 +21,14 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p/discover"
-	cp "github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/spancontext"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/allmaxgit/go-ethereum/common"
+	"github.com/allmaxgit/go-ethereum/metrics"
+	"github.com/allmaxgit/go-ethereum/p2p/discover"
+	cp "github.com/allmaxgit/go-ethereum/swarm/chunk"
+	"github.com/allmaxgit/go-ethereum/swarm/log"
+	"github.com/allmaxgit/go-ethereum/swarm/network"
+	"github.com/allmaxgit/go-ethereum/swarm/spancontext"
+	"github.com/allmaxgit/go-ethereum/swarm/storage"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 
