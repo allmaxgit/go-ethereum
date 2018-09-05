@@ -50,7 +50,7 @@ type txdata struct {
 	Recipient    *common.Address `json:"to"       rlp:"nil"` // nil means contract creation
 	Amount       *big.Int        `json:"value"    gencodec:"required"`
 	Payload      []byte          `json:"input"    gencodec:"required"`
-	BlockNumber  *string         `json:"blockNumber,omitempty"`
+	BlockNumber  *string         `json:"blockNumber,omitempty" rlp:"-"`
 
 
 	// Signature values
