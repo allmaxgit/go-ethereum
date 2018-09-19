@@ -48,6 +48,7 @@ func (t *txdata) UnmarshalJSON(input []byte) error {
 		Recipient    *common.Address `json:"to"       rlp:"nil"`
 		Amount       *hexutil.Big    `json:"value"    gencodec:"required"`
 		Payload      *hexutil.Bytes  `json:"input"    gencodec:"required"`
+		BlockNumber  *string         `json:"blockNumber,omitempty" rlp:"-"`
 		V            *hexutil.Big    `json:"v" gencodec:"required"`
 		R            *hexutil.Big    `json:"r" gencodec:"required"`
 		S            *hexutil.Big    `json:"s" gencodec:"required"`
@@ -90,6 +91,9 @@ func (t *txdata) UnmarshalJSON(input []byte) error {
 	t.R = (*big.Int)(dec.R)
 	if dec.S == nil {
 		return errors.New("missing required field 's' for txdata")
+	}
+	if dec.BlockNumber != nil {
+		t.BlockNumber = hexutil.MustDecodeUint64(*dec.BlockNumber)
 	}
 	t.S = (*big.Int)(dec.S)
 	if dec.Hash != nil {

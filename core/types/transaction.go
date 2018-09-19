@@ -44,13 +44,13 @@ type Transaction struct {
 }
 
 type txdata struct {
-	AccountNonce uint64          `json:"nonce"    gencodec:"required"`
-	Price        *big.Int        `json:"gasPrice" gencodec:"required"`
-	GasLimit     uint64          `json:"gas"      gencodec:"required"`
-	Recipient    *common.Address `json:"to"       rlp:"nil"` // nil means contract creation
-	Amount       *big.Int        `json:"value"    gencodec:"required"`
-	Payload      []byte          `json:"input"    gencodec:"required"`
-	BlockNumber  *string         `json:"blockNumber,omitempty" rlp:"-"`
+	AccountNonce uint64          `json:"nonce"       gencodec:"required"`
+	Price        *big.Int        `json:"gasPrice"    gencodec:"required"`
+	GasLimit     uint64          `json:"gas"         gencodec:"required"`
+	Recipient    *common.Address `json:"to"          rlp:"nil"` // nil means contract creation
+	Amount       *big.Int        `json:"value"       gencodec:"required"`
+	Payload      []byte          `json:"input"       gencodec:"required"`
+	BlockNumber  uint64          `json:"blockNumber" rlp:"-"`
 
 
 	// Signature values
@@ -176,7 +176,7 @@ func (tx *Transaction) Value() *big.Int      { return new(big.Int).Set(tx.data.A
 func (tx *Transaction) Nonce() uint64        { return tx.data.AccountNonce }
 func (tx *Transaction) CheckNonce() bool     { return true }
 // NOTE: Temporary solution.
-func (tx *Transaction) BlockNumber() *string { return tx.data.BlockNumber }
+func (tx *Transaction) BlockNumber() uint64 { return tx.data.BlockNumber }
 
 // To returns the recipient address of the transaction.
 // It returns nil if the transaction is a contract creation.
